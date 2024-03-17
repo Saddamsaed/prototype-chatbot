@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saddam Ahmed</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mediaqueries.css') }}">
+    
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Saddam Ahmed</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience & Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Saddam Ahmed</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="chatbox">
+      <div class="chatbox__support">
+          <div class="chatbox__header">
+             
+              <div class="chatbox__content--header">
+                  <h4 class="chatbox__heading--header">About me</h4>
+                  <p class="chatbox__description--header">Hi, i am Sado. How can i help you?</p>
+              </div>
+          </div>
+          <div class="chatbox__messages">
+              <div></div>
+          </div>
+          <div class="chatbox__footer">
+              <input type="text" placeholder="Write a message...">
+              <button class="chatbox__send--footer send__button">Send</button>
+          </div>
+      </div>
+      <div class="chatbox__button">
+          <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+          <h5 class="ask">Ask me</h5>
+      </div>
+  </div>
+
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="{{ url_for('static', filename='css/images/Sado2.jpg')}}" alt="saddam profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Saddam Ahmed</h1>
+        <p class="section__text__p2">AI Systems Development Engineer</p>
+        <div class="btn-container">
+          <p class="btn btn-color-2">
+            <a href="{{url_for ('download_cv')}}">Download CV</a> 
+        </p>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="{{ url_for('static', filename='css/images/linkedin.png')}}"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/saddam-ahmed-483921237/'"
+          />
+          <img
+            src="{{ url_for('static', filename='css/images/github.png')}}"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/saddamahm'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">To know more aske me via chat icon</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="{{ url_for('static', filename='css/images/Sado.jpg')}}"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="{{ url_for('static', filename='css/images/experience.png')}}"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>5+ years <br />AI Systems Development Engineer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="{{ url_for('static', filename='css/images/education.png')}}"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />Electrical and Electronics Engineering</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              AI Systems Development Engineer with over 5 years of experience in the technology industry. Skilled in scalable, high-performance computing and distributed algorithms, with a passion for solving complex problems. Proficient in a variety of programming languages and technologies.
+As i,m a researcher to develop intelligent Applications that help us learn, analyze, and anticipate future events. I am looking to create machines and models with logical capabilities similar to the human brain that improve performance and efficiency and make decisions to reduce costs and increase profits.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="{{ url_for('static', filename='css/images/arrow.png')}}"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    
+    
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">AI Systems Development Engineer</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="{{ url_for('static', filename='css/images/checkmark.png')}}"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="{{ url_for('static', filename='css/images/checkmark.png')}}"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="{{ url_for('static', filename='css/images/checkmark.png')}}"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="{{ url_for('static', filename='css/images/checkmark.png')}}"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="{{ url_for('static', filename='css/images/checkmark.png')}}"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="{{ url_for('static', filename='css/images/checkmark.png')}}"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="{{ url_for('static', filename='css/images/checkmark.png')}}"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="{{ url_for('static', filename='css/images/checkmark.png')}}"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="{{ url_for('static', filename='css/images/checkmark.png')}}"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="{{ url_for('static', filename='css/images/checkmark.png')}}"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="{{ url_for('static', filename='css/images/arrow.png')}}"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="{{ url_for('static', filename='css/images/project-1.png')}}"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="{{ url_for('static', filename='css/images/project-2.png')}}"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="{{ url_for('static', filename='css/images/project-3.png')}}"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="{{ url_for('static', filename='css/images/arrow.png')}}"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="{{ url_for('static', filename='css/images/email.png')}}"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">saddamsaed5@outlook.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="{{ url_for('static', filename='css/images/linkedin.png')}}"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/saddam-ahmed-483921237/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p class="footer-title">Copyright &copy;<script>document.write(new Date().getFullYear());</script> Saddam All Rights Reserved.</p>
+    </footer>
+    </footer>
+    <script>
+      $SCRIPT_ROOT = {{ request.script_root|tojson }};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>

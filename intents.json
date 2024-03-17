@@ -1,0 +1,49 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up" , "Good morning" , "Good evening" , "hello" , "hey" , "what's up"],
+         "responses": ["Hi, how can i help you?", "Good to see you!, may i help you?", "Good to see you!, how can i help?", "Hello, may i help you?"],
+         "context_set": ""
+        },
+        {"tag": "تحية",
+                "patterns": ["سلام عليكم", "كيف الحال", "سلام", "هاي", "يوم سعيد", "سلام عليكم" , "صباح الخير" , "مساء الخير" , "نهار سعيد" , "السلام عليكم" , "نهارك سعيد"],
+                "responses": ["عليكم السلام", "ي هلا, كيف اخدمك؟", "يا مرحب, كيف اقدر اساعدك؟", "مرحبا", "عليكم السلام"],
+                "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Jao", "See you later", "Goodbye", "I am Leaving", "Have a Good day","bye","i have to go","jao"],
+         "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
+         "context_set": ""
+        },
+        {"tag": "مع السلامة",
+                "patterns": ["نلتقي", "يلا", "باي", "مع السلامه", "مع السلامة","علي الذهاب","اذنك","يلا", "لبعدين"],
+                "responses": ["من المحزن رؤيتك تغادر ", "حسنا , نتكلم لاحقا", "باي باي", "اتمني ان نراك قريبا", "استمتعت بالحديث معك"],
+                "context_set": ""
+        },
+        
+        {"tag": "name",
+         "patterns": ["what is your name", "what should i call you", "whats your name?", "who are you?", "who i talk with?"],
+         "responses": ["You can call me Fando.", "I'm Saddam chatbot Fando!", "I'm Fando."],
+         "context_set": ""
+        },
+        {"tag": "اسم",
+                "patterns": ["منو اسمك", "اسمك منو", "معاي منو؟", "منو انت؟", "منو معاي؟", "ممكن اعرف بتكلم مع منو؟", "انت منو؟"],
+                "responses": ["يمكن مناداتي بفاندو.", "انا فاندو", "مساعد صدام الافتراضي فاندو  "],
+                "context_set": ""
+        },
+        {"tag": "help",
+         "patterns": ["Id like to ask something", "what can you do", "can you help me?", "can i tell you something"],
+         "responses": ["Sure, i'm here to help you!", "Of course, i can help you with whatever you tell me to.", "Definitely, tell me whats up"],
+         "context_set": ""
+        },
+        {"tag": "مساعدة",
+                "patterns": ["سؤال", "داير اسالك", "عندي سؤال", "محتاج مساعدة؟", "ممكن تساعدني؟", "استفسار","داير اسال","عندي استفسار"],
+                "responses": ["اكيد, كيف ممكن اساعدك", "يا هلا ,احكي", "ماف شك, امرك", "يا مرحب, تحت الخدمه ع طول"],
+                "context_set": ""
+        },
+        {"tag": "education",
+                "patterns": ["what did you study?", "What did you study?", "what is your field", "What is your career", "career?", "what is your specialize?", "specialize"],
+                "responses": ["I am old and wise", "trying to stay fit and young!"],
+                "context_set": ""
+        }
+   ]
+}
